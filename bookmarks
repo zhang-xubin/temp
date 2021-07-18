@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/Desktop/synchro/temp/GTD/GTD.org_capture")
+ (front-context-string . "** Todo why\n  En")
+ (rear-context-string . "-01-20 一 11:36>\n")
+ (position . 561))
+("init.el"
+ (filename . "~/Desktop/save/.emacs.d/init.el")
+ (front-context-string . "\n(setq org-defau")
+ (rear-context-string . "默认情况下, 添加到指定任务文件")
+ (position . 20339))
+)

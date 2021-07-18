@@ -1,0 +1,58 @@
+* 初始化
+创建网上仓库
+创建本地仓库
+git clone --recursive https://github.com/zhangxvbin/temp.git
+
+* 查询状态
+git status
+
+* 网上代码同步到本地
+git pull origin 
+若出现[[error1][错误]]
+
+* 本地代码同步到网上
+git config --global user.email "zhangxvbin.hebi@163.com"
+git add *
+git commit -m "更新说明"
+git push origin
+
+* 错误
+<<error1>>
+Git: pull时提示Please commit your changes or stash them before you merge.
+对本地的代码进行修改后，直接git pull会提示本地代码和github代码冲突，需要先commit本地代码，或者stash他们
+
+解决方法分两种情况：
+
+    希望保留本地的修改，pull之后，修改依然存在
+
+git stash
+git pull 
+git stash pop
+
+解析：
+git stash: 将改动藏起来
+git pull:用新代码覆盖本地代码
+git stash pop: 将刚藏起来的改动恢复
+这样操作的效果是在最新的仓库代码的基础仍保留本地的改动
+
+    不保留本地的修改，直接覆盖
+
+git reset --hard
+git pull
+
+* 退出特殊界面
+    按ESC键，以确保您不在编辑模式，然后键入
+    :wq
+
+    Esc键以确保您退出插入模式，然后:wq（冒号W Q）或ZZ（按住Shift Z偏移-Z）。
+
+    ，我可以为您提供两个链接，可以帮助你用vim：不是告诉你如何可以执行（WQ ESC）的 提供了一个HTML快速参考卡 提供了PDF格式的快速参考卡多国语言，为印出来的 CodeGo.net，褶皱的优化，把你的办公桌抽屉里 然而，学习VIM的最好方法是不是对，但作为普通的编辑器为您的日常工作。 如果你不打算切换到VIM，它的废话，以保持它的初衷。在这种情况下，去设置你喜欢的编辑器使用Git。
+
+    的快捷方式 保存 并退出 将
+    :x
+    如果你已经打开了多个文件，你可能需要做一个
+    :xa
+
+    按i或a获得选择进入插入模式， 按几ESC走出插入模式，否则你可能会意外都碰上了任何其他模式 保存，:wq，:x或ZZ不保存退出，:q!或ZQ编辑： 重新加载一个文件，并撤消您所做的所有更改... 按下几个ESC然后输入:e!。
+
+    :q!将强制无条件不保存退出

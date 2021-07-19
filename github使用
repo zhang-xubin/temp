@@ -15,7 +15,7 @@ git pull origin
 git config --global user.email "zhangxvbin.hebi@163.com"
 git config --global user.name "zhangxvbin"
 
-git add *
+git add *  (git rm filename)
 git commit -m "***"
 git push origin
 提示Username for 'https://github.com': 

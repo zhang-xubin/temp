@@ -11,10 +11,17 @@ git pull origin
 若出现[[error1][错误]]
 
 * 本地代码同步到网上
+** 配置,存储在/home/zhang/.gitconfig
 git config --global user.email "zhangxvbin.hebi@163.com"
+git config --global user.name "zhangxvbin"
+
 git add *
-git commit -m "更新说明"
+git commit -m "***"
 git push origin
+提示Username for 'https://github.com': 
+输入zhangxvbin
+提示Password for 'https://zhangxvbin@github.com': 
+输入密码
 
 * 错误
 <<error1>>
